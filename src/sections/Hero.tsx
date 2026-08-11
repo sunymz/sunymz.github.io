@@ -62,7 +62,7 @@ const Hero = ({ onNavigate }: HeroProps) => {
 
               {/* Name */}
               <h1
-                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4 tracking-tight animate-fadeInUp"
+                className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4 tracking-tight animate-fadeInUp"
                 style={{ animationDelay: '500ms' }}
               >
                 sunny🔆
@@ -70,7 +70,7 @@ const Hero = ({ onNavigate }: HeroProps) => {
 
               {/* Title */}
               <h2
-                className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-6 animate-fadeInUp"
+                className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-6 text-balance animate-fadeInUp"
                 style={{ animationDelay: '700ms' }}
               >
                 Software & Backend Engineer, IT Support.
@@ -129,14 +129,14 @@ const Hero = ({ onNavigate }: HeroProps) => {
                     Software & backend engineer building dashboards, APIs, data pipelines, and web apps plus professional Discord server setups.
                   </p>
 
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="p-3 rounded-xl bg-background border border-border">
+                  <div className="grid grid-cols-2 gap-3 min-w-0">
+                    <div className="p-3 rounded-xl bg-background border border-border min-w-0">
                       <p className="text-xs text-muted-foreground mb-1">GitHub</p>
-                      <p className="text-lg font-semibold text-foreground">@schkj</p>
+                      <p className="text-base sm:text-lg font-semibold text-foreground break-words">@schkj</p>
                     </div>
-                    <div className="p-3 rounded-xl bg-background border border-border">
+                    <div className="p-3 rounded-xl bg-background border border-border min-w-0">
                       <p className="text-xs text-muted-foreground mb-1">Focus</p>
-                      <p className="text-lg font-semibold text-foreground">Backend · Data · Web</p>
+                      <p className="text-base sm:text-lg font-semibold text-foreground break-words">Backend · Data · Web</p>
                     </div>
                   </div>
 

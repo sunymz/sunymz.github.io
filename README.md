@@ -206,10 +206,14 @@ npm run lint
 
 ### GitHub Pages
 
-1. Install gh-pages: `npm install --save-dev gh-pages`
-2. Add `"homepage"` to package.json: `"homepage": "https://yourusername.github.io/repo-name"`
-3. Add deploy script to package.json: `"deploy": "gh-pages -d dist"`
-4. Build and deploy: `npm run build && npm run deploy`
+A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds the site and deploys it automatically on every push to `main`.
+
+1. Create a repository on GitHub and push this project to it.
+2. In the repository, go to **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
+3. Push to `main` — the workflow installs dependencies, runs `npm run build`, and deploys the `dist/` folder.
+4. Your site goes live at `https://<username>.github.io/<repo>/` (or `https://<username>.github.io/` for a `<username>.github.io` repository).
+
+> `vite.config.ts` sets `base: './'`, so asset paths are relative and work on both user sites and project sub-paths.
 
 ## 🤝 Contributing
 
