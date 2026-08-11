@@ -35,8 +35,8 @@ const Footer = ({ onNavigate }: FooterProps) => {
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: 'https://x.com/sunymz', label: 'X' },
     { icon: Github, href: 'https://github.com/schkj', label: 'GitHub' },
+    { icon: Twitter, href: 'https://x.com/sunymz', label: 'X' },
     { icon: MessagesSquare, href: 'https://discord.com/users/518666205343514624', label: 'Discord' },
   ];
 
@@ -67,7 +67,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
                 SUNNY.
               </button>
               <p className="text-muted-foreground mt-4 max-w-xs mx-auto md:mx-0">
-                Professional Discord Server Setup & Management Specialist.
+                Software & Backend Engineer, IT Support.
               </p>
             </div>
 

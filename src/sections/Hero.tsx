@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Github, Twitter } from 'lucide-react';
+import { Github, MessagesSquare, Twitter } from 'lucide-react';
 import type { ModalKey } from '../lib/modals';
 
 type HeroProps = {
@@ -111,6 +111,15 @@ const Hero = ({ onNavigate }: HeroProps) => {
                   aria-label="X"
                 >
                   <Twitter size={20} />
+                </a>
+                <a
+                  href="https://discord.com/users/518666205343514624"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                  aria-label="Discord"
+                >
+                  <MessagesSquare size={20} />
                 </a>
               </div>
             </div>

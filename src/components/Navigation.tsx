@@ -69,9 +69,9 @@ const Navigation = ({ theme, onToggleTheme, onNavigate, activeModal }: Navigatio
                   e.preventDefault();
                   scrollToTop();
                 }}
-                className="text-2xl font-bold text-accent font-mono hover:scale-110 hover:rotate-3 transition-transform duration-300"
+                className="text-2xl font-bold text-accent font-mono hover:scale-110 transition-transform duration-300"
               >
-                🔆
+                SUNNY.
               </a>
 
               {/* Desktop Navigation */}
