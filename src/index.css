@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 60% 98%;
+    --foreground: 218 40% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 218 40% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 40% 14%;
+    --primary: 217 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 33% 95%;
+    --secondary-foreground: 218 40% 14%;
+    --muted: 210 33% 95%;
+    --muted-foreground: 220 16% 36%;
+    --accent: 165 90% 35%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 165 90% 35%;
+    --radius: 0.5rem;
+    
+    /* Animation Easings */
+    --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-expo-in: cubic-bezier(0.7, 0, 0.84, 0);
+    --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-dramatic: cubic-bezier(0.87, 0, 0.13, 1);
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-liquid: cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .dark {
+    --background: 216 50% 7%;
+    --foreground: 213 47% 95%;
+    --card: 216 50% 10%;
+    --card-foreground: 213 47% 95%;
+    --popover: 216 50% 10%;
+    --popover-foreground: 213 47% 95%;
+    --primary: 217 100% 50%;
+    --primary-foreground: 213 47% 95%;
+    --secondary: 216 45% 15%;
+    --secondary-foreground: 213 47% 95%;
+    --muted: 216 45% 15%;
+    --muted-foreground: 222 22% 61%;
+    --accent: 166 100% 55%;
+    --accent-foreground: 216 50% 7%;
+    --border: 216 45% 20%;
+    --input: 216 45% 20%;
+    --ring: 166 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+  
+  code, pre {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24;
+  }
+  
+  .section-inner {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-xl bg-card/80;
+  }
+  
+  .nav-link {
+    @apply relative text-foreground hover:text-accent transition-colors duration-300;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-accent transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .btn-primary {
+      @apply px-6 py-3 bg-transparent border border-accent text-accent rounded-md 
+        hover:bg-accent/10 transition-all duration-300 font-mono text-sm
+           hover:shadow-[0_0_20px_rgba(100,255,218,0.3)] hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+      @apply px-6 py-3 bg-primary text-primary-foreground rounded-md 
+        hover:bg-primary/80 transition-all duration-300 font-mono text-sm
+           hover:shadow-[0_0_20px_rgba(0,85,255,0.4)] hover:-translate-y-0.5;
+  }
+  
+  .skill-card {
+      @apply p-4 bg-card border border-border rounded-lg 
+        hover:border-accent/50 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(100,255,218,0.1)]
+           transition-all duration-300;
+  }
+  
+  .project-card {
+      @apply bg-card rounded-xl overflow-hidden border border-border
+        hover:border-accent/30 transition-all duration-500;
+  }
+  
+  .form-input {
+      @apply w-full px-4 py-3 bg-card border border-border rounded-lg
+        text-foreground placeholder:text-muted-foreground
+        focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/50
+           transition-all duration-300;
+  }
+  
+  .social-icon {
+    @apply w-10 h-10 flex items-center justify-center rounded-full
+        bg-card text-foreground border border-border
+        hover:text-accent hover:border-accent hover:-translate-y-1
+           hover:shadow-[0_5px_15px_rgba(100,255,218,0.2)]
+           transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(100, 255, 218, 0);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s var(--ease-expo-out) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s var(--ease-smooth) forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s var(--ease-expo-out) forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s var(--ease-expo-out) forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
+}
+
+/* Selection Styling */
+::selection {
+  background: hsl(var(--accent) / 0.3);
+  color: hsl(var(--foreground));
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
