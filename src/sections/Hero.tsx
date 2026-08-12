@@ -73,7 +73,7 @@ const Hero = ({ onNavigate }: HeroProps) => {
                 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-6 text-balance animate-fadeInUp"
                 style={{ animationDelay: '700ms' }}
               >
-                Software & Backend Engineer, IT Support.
+                Software Engineer, Environmental Engineer, IT Support.
               </h2>
 
               {/* Toggler Buttons */}
@@ -135,7 +135,7 @@ const Hero = ({ onNavigate }: HeroProps) => {
                   <p className="text-sm font-mono text-accent mb-4">Identity Snapshot</p>
                   <h3 className="text-2xl font-semibold text-foreground mb-3">@sunymz</h3>
                   <p className="text-muted-foreground mb-6">
-                    Software & backend engineer building dashboards, APIs, data pipelines, and web apps plus professional Discord server setups.
+                    Software engineer building dashboards, APIs, data pipelines, and web apps plus professional Discord server setups.
                   </p>
 
                   <div className="grid grid-cols-2 gap-3 min-w-0">
@@ -150,7 +150,7 @@ const Hero = ({ onNavigate }: HeroProps) => {
                   </div>
 
                   <div className="mt-6 inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2">
-                    <span className="text-accent font-mono text-xs">Software & Backend Engineer</span>
+                    <span className="text-accent font-mono text-xs">Software Engineer</span>
                   </div>
                 </div>
               </div>

@@ -66,7 +66,7 @@ const SunnyDashboard = () => {
         </h2>
         <div className="w-24 h-1 bg-accent rounded-full mb-6" />
         <p className="text-muted-foreground max-w-3xl">
-          Software & backend engineering across dashboards, APIs, data pipelines, and web
+          Software engineering across dashboards, APIs, data pipelines, and web
           applications plus professional Discord server services.
         </p>
       </div>
@@ -76,7 +76,7 @@ const SunnyDashboard = () => {
         {[
           { label: 'Handle', value: '@sunymz' },
           { label: 'GitHub', value: '@schkj' },
-          { label: 'Core Focus', value: 'Software & Backend Engineering' },
+          { label: 'Core Focus', value: 'Software Engineering' },
         ].map((item, index) => (
           <div
             key={item.label}

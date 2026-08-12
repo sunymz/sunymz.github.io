@@ -1,10 +1,10 @@
 # sunny — Portfolio
 
-A modern, responsive portfolio for **sunny (@sunymz)** — a Software & Backend Engineer and IT support professional offering Discord server setup services. Built with React, TypeScript, and Tailwind CSS, featuring a sleek dark/light theme, smooth animations, and interactive toggler sections.
+A modern, responsive portfolio for **sunny (@sunymz)** — a Software Engineer and IT support professional offering Discord server setup services. Built with React, TypeScript, and Tailwind CSS, featuring a sleek dark/light theme, smooth animations, and interactive toggler sections.
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-portfolio-url.com) *(Deploy your site to see the live version)*
+[View Live Demo](https://sunymz.github.io/) *(Deploy your site to see the live version)*
 
 ## ✨ Features
 
@@ -233,7 +233,7 @@ If you encounter any issues or have suggestions for improvements, please open an
 
 ## 👨‍💻 Author
 
-sunny (@sunymz) — Software & Backend Engineer
+sunny (@sunymz) — Software Engineer
 
 - X: [@sunymz](https://x.com/sunymz)
 - GitHub: [@schkj](https://github.com/schkj)

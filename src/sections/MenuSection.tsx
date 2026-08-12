@@ -16,7 +16,7 @@ const MenuSection = ({ onOpen }: MenuSectionProps) => {
     {
       key: 'github',
       icon: Github,
-      title: 'Software & Backend Engineering',
+      title: 'Software Engineering',
       description: 'GitHub work summary and notable projects.',
     },
     {

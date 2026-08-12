@@ -8,7 +8,7 @@ export type ModalKey =
 
 export const MODAL_TITLES: Record<ModalKey, string> = {
   dashboard: 'Persona Dashboard',
-  github: 'Software & Backend Engineering',
+  github: 'Software Engineering',
   environment: 'Environmental Science & Technology',
   experience: 'Community & Server Experience',
   commission: 'Commission Board',

@@ -67,7 +67,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
                 SUNNY.
               </button>
               <p className="text-muted-foreground mt-4 max-w-xs mx-auto md:mx-0">
-                Software & Backend Engineer, IT Support.
+                Software Engineer, Environmental Engineer and IT Support.
               </p>
             </div>
 

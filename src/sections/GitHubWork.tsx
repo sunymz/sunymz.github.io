@@ -47,16 +47,16 @@ const GitHubWork = () => {
       tags: ['Backend', 'API', 'Air Quality'],
     },
     {
-      name: 'MDB to SQL (private)',
-      link: 'https://github.com/gawbkt-org/mdb-sql',
-      summary: 'Python utility that converts Microsoft Access (MDB) data into SQL.',
-      tags: ['Python', 'Data Conversion', 'SQL'],
+      name: 'bamdata',
+      link: 'https://github.com/gawbkt-org/bamdata',
+      summary: 'Dashboard for fetching, analyzing, and managing BAM1020 data for PM2.5 and PM10.',
+      tags: ['Dashboard', 'Air Quality', 'PM2.5 / PM10'],
     },
     {
-      name: 'Bingo App',
-      link: 'https://github.com/Wargavi48/bingo',
-      summary: 'Community bingo application built for events and fan engagement.',
-      tags: ['Web App', 'Interactive'],
+      name: 'komputer-kaia',
+      link: 'https://github.com/Wargavi48/komputer-kaia',
+      summary: 'Fan site graduation project for Kanaia Asa (JKT48V).',
+      tags: ['Fan Site', 'Graduation', 'Community'],
     },
     {
       name: 'KTPVisualNovel',
@@ -125,11 +125,11 @@ const GitHubWork = () => {
       <div className="mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
           <span className="text-accent font-mono text-xl mr-2">02.</span>
-          Software & Backend Engineering
+          Software Engineering
         </h2>
         <div className="w-24 h-1 bg-accent rounded-full mb-6" />
         <p className="text-muted-foreground max-w-3xl">
-          GitHub work summary as a software and backend engineer — covering personal projects,
+          GitHub work summary as a software engineer — covering personal projects,
           private development repositories, organization work, dashboards, web applications, and
           data visualization tools.
         </p>
@@ -138,7 +138,7 @@ const GitHubWork = () => {
       {/* Stats */}
       <div className="grid md:grid-cols-3 gap-4 mb-8">
         {[
-          { label: 'Focus', value: 'Software & Backend' },
+          { label: 'Focus', value: 'Software Engineering' },
           { label: 'Scope', value: 'Personal · Org · Collaborative' },
           { label: 'Repositories', value: '~40 across projects' },
         ].map((item, index) => (
