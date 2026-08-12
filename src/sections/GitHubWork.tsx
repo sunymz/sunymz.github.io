@@ -49,27 +49,27 @@ const GitHubWork = () => {
     {
       name: 'bamdata',
       link: 'https://github.com/gawbkt-org/bamdata',
-      summary: 'Dashboard for fetching, analyzing, and managing BAM1020 data for PM2.5 and PM10.',
+      summary: 'Dashboard for fetching, analyzing, and managing operational of BAM1020 PM2.5 and PM10.',
       tags: ['Dashboard', 'Air Quality', 'PM2.5 / PM10'],
     },
     {
       name: 'komputer-kaia',
       link: 'https://github.com/Wargavi48/komputer-kaia',
-      summary: 'Fan site graduation project for Kanaia Asa (JKT48V).',
-      tags: ['Fan Site', 'Graduation', 'Community'],
+      summary: 'Fan site graduation project for Kanaia Asa JKT48V.',
+      tags: ['Fan Site', 'Community', 'JKT48V'],
     },
     {
       name: 'KTPVisualNovel',
       link: 'https://github.com/Wargavi48/KTPVisualNovel',
       steam: 'https://store.steampowered.com/app/3037900/WGV_Dreamcatcher/',
       summary: 'Visual novel project, released on Steam as WGV Dreamcatcher.',
-      tags: ['Visual Novel', 'Steam', 'Interactive'],
+      tags: ['Visual Novel', 'Steam', 'JKT48V'],
     },
     {
       name: 'Wargavi48 Website',
       link: 'https://github.com/Wargavi48/wargavi48.github.io',
       summary: 'Community website for the Wargavi48 fanbase, published on GitHub Pages.',
-      tags: ['GitHub Pages', 'Web'],
+      tags: ['Community', 'Web', 'JKT48V'],
     },
   ];
 
