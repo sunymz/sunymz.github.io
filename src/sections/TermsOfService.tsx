@@ -52,7 +52,7 @@ const TermsOfService = ({ onNavigate }: TermsOfServiceProps) => {
     {
       icon: CreditCard,
       title: 'Payments & Donations',
-      body: 'Payments are made through supported tipping platforms (for example Trakteer or Tako). Amounts sent as tips or donations are considered donations and cannot be refunded.',
+      body: 'Payments are made through supported tipping platforms (for example Trakteer, Sociabuzz or PayPal). Amounts sent as tips or donations are considered donations and cannot be refunded.',
     },
     {
       icon: ShieldCheck,

@@ -1,6 +1,6 @@
 # sunny — Portfolio
 
-A modern, responsive portfolio for **sunny (@sunymz)** — a Software Engineer and IT support professional offering Discord server setup services. Built with React, TypeScript, and Tailwind CSS, featuring a sleek dark/light theme, smooth animations, and interactive toggler sections.
+A modern, responsive portfolio for **sunny (@sunymz)** — a Software & Backend Engineer and IT support professional offering Discord server setup services. Built with React, TypeScript, and Tailwind CSS, featuring a sleek dark/light theme, smooth animations, and interactive toggler sections.
 
 ## 🚀 Live Demo
 
@@ -42,8 +42,8 @@ Make sure you have Node.js installed on your machine. You can download it from [
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/react-tailwind-portfolio.git
-   cd react-tailwind-portfolio
+   git clone https://github.com/schkj/schkj.github.io.git
+   cd schkj.github.io
    ```
 
 2. Install dependencies:
@@ -109,6 +109,7 @@ yarn preview
 ```text
 src/
 ├── components/         # Reusable components
+│   ├── DiscordIcon.tsx # Discord brand icon component
 │   ├── Modal.tsx       # Modal window wrapper
 │   └── Navigation.tsx  # Navigation component
 ├── sections/          # Page sections (opened as modal togglers)
@@ -233,7 +234,8 @@ If you encounter any issues or have suggestions for improvements, please open an
 
 ## 👨‍💻 Author
 
-sunny (@sunymz) — Software Engineer
+sunny (@sunymz) — Software & Backend Engineer
 
 - X: [@sunymz](https://x.com/sunymz)
 - GitHub: [@schkj](https://github.com/schkj)
+- Discord: [sunymz](https://discord.com/users/518666205343514624)

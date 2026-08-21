@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ArrowUp, Github, Heart, MessagesSquare, Twitter } from 'lucide-react';
+import { ArrowUp, Github, Heart, Twitter } from 'lucide-react';
+import DiscordIcon from '../components/DiscordIcon';
 import type { ModalKey } from '../lib/modals';
 
 type FooterProps = {
@@ -37,7 +38,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/schkj', label: 'GitHub' },
     { icon: Twitter, href: 'https://x.com/sunymz', label: 'X' },
-    { icon: MessagesSquare, href: 'https://discord.com/users/518666205343514624', label: 'Discord' },
+    { icon: DiscordIcon, href: 'https://discord.com/users/518666205343514624', label: 'Discord' },
   ];
 
   const handleLink = (link: { label: string; key?: ModalKey; isHome?: boolean }) => {
@@ -64,7 +65,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
                 onClick={scrollToTop}
                 className="text-3xl font-bold text-accent font-mono hover:scale-110 inline-block transition-transform"
               >
-                SUNNY.
+                SUNNY🔆
               </button>
               <p className="text-muted-foreground mt-4 max-w-xs mx-auto md:mx-0">
                 Software Engineer, Environmental Engineer and IT Support.

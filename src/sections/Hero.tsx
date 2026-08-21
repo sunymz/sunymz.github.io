@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { Github, MessagesSquare, Twitter } from 'lucide-react';
+import { Github, Twitter } from 'lucide-react';
+import DiscordIcon from '../components/DiscordIcon';
 import type { ModalKey } from '../lib/modals';
 
 type HeroProps = {
@@ -119,7 +120,7 @@ const Hero = ({ onNavigate }: HeroProps) => {
                   className="social-icon"
                   aria-label="Discord"
                 >
-                  <MessagesSquare size={20} />
+                  <DiscordIcon size={20} />
                 </a>
               </div>
             </div>

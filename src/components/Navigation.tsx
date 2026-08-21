@@ -37,6 +37,8 @@ const Navigation = ({ theme, onToggleTheme, onNavigate, activeModal }: Navigatio
 
   const navLinks: { name: string; key: ModalKey }[] = [
     { name: 'Dashboard', key: 'dashboard' },
+    { name: 'Engineering', key: 'github' },
+    { name: 'Environment', key: 'environment' },
     { name: 'Experience', key: 'experience' },
     { name: 'Commission', key: 'commission' },
     { name: 'TOS', key: 'tos' },
@@ -71,7 +73,7 @@ const Navigation = ({ theme, onToggleTheme, onNavigate, activeModal }: Navigatio
                 }}
                 className="text-2xl font-bold text-accent font-mono hover:scale-110 transition-transform duration-300"
               >
-                SUNNY.
+                SUNNY🔆
               </a>
 
               {/* Desktop Navigation */}
