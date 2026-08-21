@@ -43,7 +43,7 @@ Make sure you have Node.js installed on your machine. You can download it from [
 
    ```bash
    git clone https://github.com/sunymz/sunymz.github.io.git
-   cd schkj.github.io
+   cd sunymz.github.io
    ```
 
 2. Install dependencies:
