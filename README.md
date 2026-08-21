@@ -1,6 +1,6 @@
 # sunny — Portfolio
 
-A modern, responsive portfolio for **sunny (@sunymz)** — a Software & Backend Engineer and IT support professional offering Discord server setup services. Built with React, TypeScript, and Tailwind CSS, featuring a sleek dark/light theme, smooth animations, and interactive toggler sections.
+A modern, responsive portfolio for **sunny🔆 (@sunymz)** — a Software & Backend Engineer and IT support professional offering Discord server setup services. Built with React, TypeScript, and Tailwind CSS, featuring a sleek dark/light theme, smooth animations, and interactive toggler sections.
 
 ## 🚀 Live Demo
 
@@ -42,7 +42,7 @@ Make sure you have Node.js installed on your machine. You can download it from [
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/schkj/schkj.github.io.git
+   git clone https://github.com/sunymz/sunymz.github.io.git
    cd schkj.github.io
    ```
 
