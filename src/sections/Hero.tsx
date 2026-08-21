@@ -74,7 +74,6 @@ const Hero = ({ onNavigate }: HeroProps) => {
                 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-6 text-balance animate-fadeInUp"
                 style={{ animationDelay: '700ms' }}
               >
-                Software Engineer, Environmental Engineer, IT Support.
               </h2>
 
               {/* Toggler Buttons */}
@@ -150,8 +149,16 @@ const Hero = ({ onNavigate }: HeroProps) => {
                     </div>
                   </div>
 
-                  <div className="mt-6 inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2">
-                    <span className="text-accent font-mono text-xs">Software Engineer</span>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2">
+                      <span className="text-accent font-mono text-xs">Software Engineer</span>
+                    </span>
+                    <span className="inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2">
+                      <span className="text-accent font-mono text-xs">Environmental Engineer</span>
+                    </span>
+                    <span className="inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2">
+                      <span className="text-accent font-mono text-xs">IT Support</span>
+                    </span>
                   </div>
                 </div>
               </div>
